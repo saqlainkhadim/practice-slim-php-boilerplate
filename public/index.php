@@ -26,8 +26,12 @@ $app->get('/',function (Request $request, Response $response, $parameters){
     return $response;
 
 });
-$app->get('/home',function (Request $request, Response $response, $parameters){
-    return view($response,'abc');
 
+$app->get('/login',function (Request $request, Response $response, $parameters){
+    return view($response,'auth-login');
 });
+$app->get('/register',function (Request $request, Response $response, $parameters){
+    return view($response,'auth-register');
+});
+
 $app->run();
