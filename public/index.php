@@ -11,8 +11,8 @@ $app= AppFactory::create();
 
 
 function view(Response $response,$template,$with=[]){
-    $cache =__DIR__.'../cache';
-    $views =__DIR__.'../resources/views';
+    $cache =__DIR__.'/../cache';
+    $views =__DIR__.'/../resources/views';
 
     $blade=( new Blade($views,$cache))->make($template,$with);
     $response->getBody()->write($blade->render());
@@ -27,7 +27,7 @@ $app->get('/',function (Request $request, Response $response, $parameters){
 
 });
 $app->get('/home',function (Request $request, Response $response, $parameters){
-    return view($response,'abc.abc');
+    return view($response,'abc');
 
 });
 $app->run();
