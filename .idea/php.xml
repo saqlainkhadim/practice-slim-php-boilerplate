@@ -40,6 +40,7 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/bus" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/php-di/slim-bridge" />
+      <path value="$PROJECT_DIR$/vendor/nategood/httpful" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
